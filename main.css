@@ -6,7 +6,8 @@
 }
 
 .button {
-  margin: 10pt;
+  padding: 5pt;
+  display: block;
   flex: 1;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;

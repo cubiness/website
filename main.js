@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
 function drawButton(ctx, w, h) {
-  s = 8;                       // w and h for each square
+  s = 4;                       // w and h for each square
   percent = 0.8;               // percent of canvas that will be button; rest will be fade
   stroke = 1;
   margin = 1;
