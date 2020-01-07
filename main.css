@@ -1,0 +1,13 @@
+
+.button-list {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.button {
+  margin: 10pt;
+  flex: 1;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+}
