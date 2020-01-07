@@ -26,7 +26,10 @@ function drawButton(ctx, w, h) {
       if (x == 0 || y == 0 || x == block_width * percent - 1 || y >= block_height - 1) {
         drawSquare(data, x, y, s, margin, stroke);
       } else if (x >= block_width * percent) {
-        drawSquare(data, x, y, s, margin, stroke);
+        var amount = (x - block_width * percent) * (1 - percent);
+        if (Math.random() > amount) {
+          drawSquare(data, x, y, s, margin, stroke);
+        }
       }
     }
   }
