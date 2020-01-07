@@ -1,8 +1,7 @@
 
-.button-list {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
+.button-container {
+  position: relative;
+  text-align: center;
 }
 
 .button {
@@ -11,4 +10,11 @@
   flex: 1;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
+}
+
+.button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -78%);
 }
