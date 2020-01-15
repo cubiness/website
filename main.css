@@ -1,6 +1,15 @@
-.ip-container {
+* {
+  text-transform: none !important
+}
+
+.header {
   position: absolute;
   z-index: 3;
+  width: 100%;
+}
+
+.header-section {
+  margin: 8pt;
   width: 100%;
 }
 
