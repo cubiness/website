@@ -2,6 +2,12 @@
 $(document).ready(function(){
   $('.sidenav').sidenav();
   $('.slider').slider();
+  $('.tooltipped').tooltip({exitDelay: 200});
+  $('#ip-button').on('click', function(){
+    var el = M.Tooltip.getInstance($('.tooltipped')[0]);
+    el.tooltipEl.children[0].innerText = "Copied!";
+    copy("mc.cubiness.net");
+  });
 
   canvases = $('.button');
   for (var i = 0; i < canvases.length; i++) {
@@ -11,6 +17,15 @@ $(document).ready(function(){
     drawButton(ctx, c.width, c.height);
   }
 });
+
+function copy(str) {
+  el = document.createElement('textarea');
+  el.value = str;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+}
 
 function drawButton(ctx, w, h) {
   s = 4;                       // w and h for each square
