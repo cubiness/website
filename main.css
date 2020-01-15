@@ -1,20 +1,14 @@
-
-.button-container {
-  position: relative;
-  text-align: center;
-}
-
-.button {
-  padding: 5pt;
-  display: block;
-  flex: 1;
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-}
-
-.button-text {
+.ip-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-70%, -78%);
+  z-index: 3;
+  width: 100%;
 }
+
+.ip-box {
+  display: inline-block;
+  background-color: #aaaa;
+  padding: 10pt;
+  border-radius: 8pt;
+  margin: 8pt;
+}
+
