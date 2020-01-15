@@ -8,6 +8,9 @@ $(document).ready(function(){
     el.tooltipEl.children[0].innerText = "Copied!";
     copy("mc.cubiness.net");
   });
+  $('#discord-button').on('click', function(){
+    window.open("https://discord.gg/EJsevTq");
+  });
 
   canvases = $('.button');
   for (var i = 0; i < canvases.length; i++) {
