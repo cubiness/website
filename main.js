@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
   $('.sidenav').sidenav();
+  $('.carousel.carousel-slider').carousel({
+    fullWIdth: true,
+    indicators: true
+  });
 
   canvases = $('.button');
   for (var i = 0; i < canvases.length; i++) {
